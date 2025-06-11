@@ -1,0 +1,1 @@
+# My first project with Cypress, exploring the basic fundamentals for coding and automation.
