@@ -1,8 +1,9 @@
 import userData from '../fixtures/users/userData.json';
 import LoginPage from '../pages/loginPage';
 import DashboardPage from '../pages/dashboardPage';
-import MyInfoPage from '../pages/myInfoPage';
 import MenuPage from '../pages/menuPage';
+import MyInfoPage from '../pages/myInfoPage';
+
 
 
 const loginPage = new LoginPage();
@@ -19,14 +20,16 @@ describe('Orange HRM Test', () => {
     loginPage.loginWithUser(userData.userSuccess.username, userData.userSuccess.password);
 
     dashboardPage.checkDashboardPage();
-    dashboardPage.myInfoHUD();
 
     menuPage.accessMyInfo();
 
+    myInfoPage.fillPersonDetails('FirstName', 'MiddleName', 'LastName');
+    myInfoPage.fillEmployeeDetails('EmployeeId', 'OtherId', 'DL123456', '2025-06-26');
+    myInfoPage.fillPersonStatus('1990-09-22');
+    myInfoPage.customFields('TEXTOTESTE');
+    myInfoPage.saveForm();
 
-    myInfoPage.accessMyInfoPage();
-    myInfoPage.personalInformation();
- 
+
   })
 
   it('Login - Failure', () => {
