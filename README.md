@@ -1,1 +1,1 @@
-# My first project with Cypress, exploring the basic fundamentals for coding and automation.
+# A Cypress project that explores the basic fundamentals for coding and automation.
