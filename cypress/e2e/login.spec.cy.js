@@ -7,17 +7,13 @@ const dashboardPage = new DashboardPage();
 
 describe('Login Orange HRM Test', () => {
 
-
   it('Login - Success', () => {
-    
     loginPage.accessLoginPage();
     loginPage.loginWithUser(userData.userSuccess.username, userData.userSuccess.password);
     dashboardPage.checkDashboardPage();
-
   })
 
-  it('Login - Failure', () => {
-    
+  it('Login - Failure', () => {   
     loginPage.accessLoginPage();
     loginPage.loginWithUser(userData.userFailure.username, userData.userFailure.password);
     loginPage.checkLoginError();
