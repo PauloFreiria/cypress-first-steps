@@ -2,7 +2,7 @@
 
 Cypress is a JavaScript-based end-to-end testing framework that allows developers to write and run tests directly in a real browser environment.
 
-This project aims to automate the testing of login and user update functionalities while exploring the basic fundamentals of coding and test automation..
+This project aims to automate the testing of login and user update functionalities while exploring the basic fundamentals of coding and test automation.
 
 ## Installation
 ```bash
